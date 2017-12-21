@@ -11,9 +11,9 @@ int main(void) {
         a[i] = a[i] * a[i] * a[i];
     }
 
-    //for (int i = 0; i < N; i++) {
-    //    printf("%ld ", a[i]);
-    //}
+    for (int i = 0; i < N; i++) {
+        printf("%ld ", a[i]);
+    }
     puts("");
 }
 

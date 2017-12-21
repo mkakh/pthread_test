@@ -14,7 +14,7 @@ void *th(void *aa) {
     array_t *arr = aa;
     pthread_mutex_lock(&mutex);
     const int id = arr->id;
-    (arr->id)++;
+    arr->id++;
     pthread_mutex_unlock(&mutex);
     const int s = INTERVAL * id;
     const int e = INTERVAL * (id + 1);
@@ -42,9 +42,9 @@ int main(void) {
         pthread_join(thread[i], NULL);
     }
 
-    //for (int i = 0; i < N; i++) {
-    //    printf("%ld ", arr.a[i]);
-    //}
+    for (int i = 0; i < N; i++) {
+        printf("%ld ", arr.a[i]);
+    }
     puts("");
 }
 
