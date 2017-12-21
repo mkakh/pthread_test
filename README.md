@@ -1,1 +1,1 @@
-# pthreadの速度テスト
+# pthreadの速度テスト用
